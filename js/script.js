@@ -7,6 +7,9 @@ const appartaments = document.querySelector('.appartaments');
 const devices = document.querySelector('.devices');
 const linkDevice = document.querySelectorAll('.link-device');
 const roomGetback = document.querySelector('.room-getback');
+const appartamentsGetback = document.querySelector('.appartaments-getback');
+const macros = document.querySelector('.macros');
+const devicesInfoButtonMacros = document.querySelector('.devices-info-button-macros');
 formAuthorisedInput.value = 'root';
 
 
@@ -18,6 +21,15 @@ roomGetback.addEventListener('click', () => {
 	devices.classList.add('close-modal');
 	homeScreen.classList.remove('close-modal');
 });
+appartamentsGetback.addEventListener('click', () => {
+	homeScreen.classList.remove('close-modal');
+	macros.classList.add('close-modal');
+})
+devicesInfoButtonMacros.addEventListener('click', () => {
+	devices.classList.add('close-modal');
+	macros.classList.remove('close-modal');
+})
+
 
 
 // linkRoom.addEventListener('click', () => {

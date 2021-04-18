@@ -370,11 +370,45 @@ button {
 	}
 }
 .devices-info-button-off {
-	background: linear-gradient(0deg, #ff6565, #ff6565), linear-gradient(0deg, #ff6565, #ff6565),
-		linear-gradient(0deg, #ff6565, #ff6565), #ff6565;
+	background-color: #ff6565;
 	border-radius: 10px;
+	transition: all 0.4s ease 0s;
+	&:hover {
+		background-color: #ff6565d0;
+		border-radius: 30px;
+	}
 }
 .devices-info-button-macros {
 	background: #1f7ae4;
-	border-radius: 10px;
+	border-radius: 20px;
+}
+
+.macros {
+	color: #fff;
+}
+.macros-title {
+}
+.macros-btn {
+	background-color: rgb(86, 180, 235);
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: rgba(86, 180, 235, 0.685);
+		border-radius: 30px;
+	}
+}
+.macros-add-btn {
+	padding-left: 70px !important;
+	background: #4f5d73 url("../img/doc.svg") 20px center no-repeat;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background: #879ec4 url("../img/doc.svg") 20px center no-repeat;
+		border-radius: 30px;
+	}
+}
+.appartaments-getback {
+	text-decoration: underline;
+	font-size: 14px;
+
+	cursor: pointer;
+	margin-left: 10px;
 }
